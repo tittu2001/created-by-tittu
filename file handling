@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    // Variables
+    string studentName;
+    int studentGrade;
+    string studentClass;
+    string studentInfo;
+
+    // Get student info
+    cout << "Enter student's name: ";
+    getline(cin, studentName);
+    cout << "Enter student's grade: ";
+    cin >> studentGrade;
+    cout << "Enter student's class: ";
+    cin >> studentClass;
+
+    // Create student info string
+    studentInfo = studentName + " is in grade " + to_string(studentGrade) + " and is in class " + studentClass + ".";
+
+    // Print student info
+    cout << studentInfo << endl;
+
+    return 0;
+}
